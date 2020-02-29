@@ -15,7 +15,7 @@ syllabus
 [objectives](#objectives)  
 [grades](#grades)  
 [homework](#homework)  
-[labs](#labs)  
+[lab](#lab)  
 [attendance](#attendance)  
 [valid excuses](#valid-excuses)  
 [academic integrity](#academic-integrity)  
@@ -111,23 +111,35 @@ displays D1 through D7 plus written critiques.
 
 <br> <a href="#top">▲ top of page</a>
 
-## labs
+## lab
 
-Lab periods are used for working with software and for presentating and
-discussing portfolio work in progress.
+**Labs in weeks 1–3** are structured as 3-hour workshops to cover
+essential components of your work.
 
-  - Week 1 (3 hours) Software studio
-  - Week 2 (3 hours) Data studio
-  - Week 3 (3 hours) Portfolio studio
-  - Week 4–10 (1 hour) Present & discuss data displays D1–D7
-  - Week 4–10 (2 hours) Work, collaborate, solve coding problems, write
+  - Software studio, week 1
+  - Data studio, week 2
+  - Portfolio studio, week 3
+
+**Labs in weeks 4–10** are less structured. Students are assigned to
+small discussion groups for presenting their weekly portfolio progress.
+I meet with each group, one at a time. For the remaining time, students
+are free to work on their weekly assignments.
+
+  - (25 min) Weekly presentation and discussion of the display D1–D7 due
+    that week
+  - (remaining time) Obtaining data, R practice problems, readings,
+    reading responses, and working on the portfolio data carpentry,
+    graph design, and critiques.
 
 ## attendance
 
-Attendance is required for periods in which we have discussions of
-readings and presentations. The penalty for missing more than two of
-these periods without a valid excuse is a one-letter-grade course grade
-reduction.
+Attendance is required for periods in which we have
+
+  - reading discussions
+  - small group presentations of weekly data displays D1–D7
+
+The penalty for missing more than two of these periods without a valid
+excuse is a one-letter-grade course grade reduction.
 
 <br> <a href="#top">▲ top of page</a>
 
