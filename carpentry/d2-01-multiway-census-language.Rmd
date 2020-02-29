@@ -1,0 +1,37 @@
+---
+output: github_document
+---
+
+
+
+
+
+```{r}
+library("tidyverse")
+library("knitr")
+opts_knit$set(root.dir = "../")
+
+df <- read_csv("../data-raw/ACS_17_1YR_S1601_metadata.csv") %>%
+	as.data.frame()
+
+# filter for totals only
+df <- df %>% 
+	filter(str_detect(GEO.id, "_EST_")) %>% 
+	filter(str_detect(Id, "Total")) %>% 
+	filter(!str_detect(Id, "years old")) %>% 
+	filter(!str_detect(GEO.id, "VC01")) %>% 
+	filter(!str_detect(GEO.id, "VC03"))
+
+
+
+search_str <- str_c(df$GEO.id, collapse = "|")
+
+search_str
+```
+
+Use this search string from the metadata CSV to filter the data CSV. 
+
+```{r}
+df <- read_csv("data-raw/ACS_17_1YR_S1601_with_ann.csv")
+```
+

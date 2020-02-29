@@ -1,0 +1,49 @@
+digraph whatever {
+	graph [root=grDevices, rankdir=TB, bgcolor=transparent, fontcolor=black, ratio=fill, splines=TRUE, rank=same, size="6.99999895833333,2.99999895833333"];
+	node [label="\N", fontname=Helvetica, fontsize=10, shape=circle, fixedsize=TRUE, fillcolor=gray90, color=black, fontcolor=black, height="0.5", width="0.75", style=filled];
+	edge [headport=center, arrowhead=none, color=black, dir=none, weight="1.0", fontcolor=black, arrowtail=none, fontsize=14, labelfontsize=11, arrowsize=1, style=solid, minlen=1];
+	graph [bb="0,0,817,350.14"];
+	subgraph cluster_0 {
+		graph [bb="719,10.531,809,339.61",
+			style=dashed];
+		rgl [label=rgl, height="0.75", pos="764,293.53"];
+		rggobi [label=rggobi, height="0.75", pos="754,175.53"];
+		iplots [label=iplots, height="0.75", pos="757,56.531"];
+		rgl -> rggobi:center [arrowhead=open, dir=forward, weight=1, style=invis, pos="e,756.24,202.48 761.76,266.5 760.39,250.68 758.63,230.24 757.13,212.85"];
+		rggobi -> iplots:center [arrowhead=open, dir=forward, weight=1, style=invis, pos="e,756.33,83.7 754.67,148.27 755.08,132.32 755.61,111.7 756.06,94.159"];
+		iplots -> rgl:center [arrowhead=open, dir=forward, weight=1, style=invis, pos="e,773.72,268.08 768.18,81.234 776.03,99.241 785.84,124.86 790,148.53 796.61,186.13 786.5,229.21 777.02,258.38"];
+	}
+	grDevices [label=grDevices, fillcolor=gray70, height="0.75", pos="536,293.53"];
+	graphics [label=graphics, fillcolor=gray70, height="0.75", pos="243,175.53"];
+	grid [label=grid, fillcolor=gray70, height="0.75", pos="464,175.53"];
+	maps [label=maps, height="0.75", pos="27,56.531"];
+	diagram [label=diagram, height="0.75", pos="99,56.531"];
+	plotrix [label=plotrix, height="0.75", pos="171,56.531"];
+	gplots [label=gplots, height="0.75", pos="243,56.531"];
+	pixmap [label=pixmap, height="0.75", pos="315,56.531"];
+	lattice [label=lattice, fillcolor=gray70, height="0.75", pos="459,56.531"];
+	ggplot2 [label=ggplot2, fillcolor=gray70, height="0.75", pos="531,56.531"];
+	grImport [label=grImport, height="0.75", pos="603,56.531"];
+	gridBase [label=gridBase, height="0.75", pos="387,56.531"];
+	vcd [label=vcd, height="0.75", pos="675,56.531"];
+	JavaGD [label=JavaGD, height="0.75", pos="536,175.53"];
+	Cairo [label=Cairo, height="0.75", pos="608,175.53"];
+	tikzDevice [label=tikzDevice, height="0.75", pos="680,175.53"];
+	grDevices -> graphics:center [arrowhead=open, dir=forward, weight=1, pos="e,267.92,186.4 511.02,282.64 458.58,261.88 336.97,213.73 277.29,190.1"];
+	grDevices -> grid:center [arrowhead=open, dir=forward, weight=1, pos="e,477.84,198.83 522.12,270.16 511.06,252.35 495.46,227.22 483.21,207.47"];
+	grDevices -> JavaGD:center [arrowhead=open, dir=forward, weight=1, pos="e,536,202.88 536,266.5 536,250.79 536,230.53 536,213.21"];
+	grDevices -> Cairo:center [arrowhead=open, dir=forward, weight=1, pos="e,594.16,198.83 549.88,270.16 560.94,252.35 576.54,227.22 588.79,207.47"];
+	grDevices -> tikzDevice:center [arrowhead=open, dir=forward, weight=1, pos="e,659.41,193.12 556.63,275.91 581.55,255.84 623.59,221.98 651.56,199.44"];
+	graphics -> maps:center [arrowhead=open, dir=forward, weight=1, pos="e,48.325,73.771 218.47,163.63 183.21,147.63 116.54,116.12 63,83.531 61.02,82.326 59.009,81.045 57.001,79.723"];
+	graphics -> diagram:center [arrowhead=open, dir=forward, weight=1, pos="e,119.59,74.263 222.37,157.77 197.45,137.52 155.41,103.37 127.44,80.636"];
+	graphics -> plotrix:center [arrowhead=open, dir=forward, weight=1, pos="e,184.91,80.128 229.29,152.25 218.25,134.31 202.6,108.88 190.3,88.886"];
+	graphics -> gplots:center [arrowhead=open, dir=forward, weight=1, pos="e,243,83.7 243,148.27 243,132.32 243,111.7 243,94.159"];
+	graphics -> pixmap:center [arrowhead=open, dir=forward, weight=1, pos="e,301.09,80.128 256.71,152.25 267.75,134.31 283.4,108.88 295.7,88.886"];
+	graphics -> gridBase:center [arrowhead=open, dir=forward, weight=1, pos="e,366.41,74.263 263.63,157.77 288.55,137.52 330.59,103.37 358.56,80.636"];
+	grid -> lattice:center [arrowhead=open, dir=forward, weight=1, pos="e,460.12,83.7 462.88,148.27 462.2,132.32 461.32,111.7 460.57,94.159"];
+	grid -> ggplot2:center [arrowhead=open, dir=forward, weight=1, pos="e,517.96,80.31 477.08,151.69 487.27,133.9 501.54,108.98 512.84,89.246"];
+	grid -> grImport:center [arrowhead=open, dir=forward, weight=1, pos="e,582.76,74.564 484.21,157.52 508.09,137.42 547.98,103.85 574.87,81.211"];
+	grid -> vcd:center [arrowhead=open, dir=forward, weight=1, pos="e,653.74,73.885 485.26,158.18 490,154.81 495.08,151.42 500,148.53 558.79,113.97 580.21,118.09 639,83.531 641,82.356 643.02,81.099\
+ 645.04,79.794"];
+	grid -> gridBase:center [arrowhead=open, dir=forward, weight=1, pos="e,401.42,79.439 449.52,152.52 437.53,134.3 420.36,108.22 407.05,87.989"];
+}

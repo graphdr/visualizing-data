@@ -1,0 +1,29 @@
+% LaTeX packages
+
+%\hypersetup{colorlinks}	 % colored hyperlinks for onscreen viewing
+\usepackage{booktabs} 	
+\usepackage{ctable}       % for use with xtable printing
+\usepackage{pdfpages}
+
+\usepackage{sistyle}
+\SIthousandsep{,}
+
+% plus all the packages invoked by the Tufte handout class
+
+
+
+% new commands
+\newcommand{\NL}{\newthought{}}
+
+% add the course logo
+\newcommand{\DataVizLogo}{%
+\marginnote[-4\baselineskip]{\raggedleft\small
+\includegraphics[scale=1.1]{../common/CourseLogo3a.pdf}\\
+{\em \Large Visualizing Data} \\ 
+\thisterm \\ 
+R. Layton\\
+\includegraphics[scale=1.1]{../common/CourseLogo3b.pdf}
+}%
+}%
+
+\usepackage{bbding} % for dingbats

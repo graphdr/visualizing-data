@@ -1,0 +1,73 @@
+---
+output: github_document
+---
+
+<br>
+Copy and paste the following raw Rmd script into your own Rmd file
+
+## week 4 reading prompts  
+
+Wainer, Howard (2014) Fifteen displays about one thing. In: *Medical
+illuminations: Using evidence, visualization, and statistical thinking to
+improve healthcare.* UK: Oxford University Press, 32--49.
+
+Definition: "Gram staining" (named after its inventor, the Danish scientist 
+Hans Christian Gram) is a method of staining to distinguish one type of 
+bacterium from another---it can be used as a faster substitute for culturing. 
+Gram staining is a category with two levels: some bacteria are Gram stain 
+negative and some are Gram stain positive. Read more about it on the  
+[Gram stain Wiki](https://en.wikipedia.org/wiki/Gram_stain).  
+
+
+
+**Prompt:** Reviewing the article carefully, come up with a list of variables. 
+Classify each as quantitative or categorical, and if categorical, the levels. 
+
+**Response:** 
+
+variable name:
+
+- type:    
+- levels (if categorical):    
+
+variable name:  
+
+- type:    
+- levels (if categorical):    
+
+variable name:
+
+- type:    
+- levels (if categorical):    
+
+etc. as many as needed 
+
+
+ 
+**Prompt:** The article title is "Fifteen displays about one thing." After 
+reading the entire article, what is the "one thing?" Note that the "one thing" 
+might imply multiple goals or more than one question. 
+
+**Response:** 
+
+
+
+**Prompt:** In your opinion, which of the 15 displays best answers the 
+question(s) about the "one thing?"
+
+**Response:**  
+
+
+
+**Prompt:** Explain why.  
+
+**Response:** 
+
+
+
+**Prompt:** Re-read Wainer's conclusion section. What main points does he make 
+about graph design or visual rhetoric that you could apply to your own work 
+this term. 
+
+**Response:** 
+

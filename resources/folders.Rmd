@@ -1,0 +1,37 @@
+
+```{r out.width="3.5%"}
+include_graphics("../resources/icon-folder.png")
+```
+carpentry  
+```{r out.width="3.5%"}
+include_graphics("../resources/icon-folder.png")
+```
+data  
+```{r out.width="3.5%"}
+include_graphics("../resources/icon-folder.png")
+```
+data-raw  
+```{r out.width="3.5%"}
+include_graphics("../resources/icon-folder.png")
+```
+design  
+```{r out.width="3.5%"}
+include_graphics("../resources/icon-folder.png")
+```
+explore  
+```{r out.width="3.5%"}
+include_graphics("../resources/icon-folder.png")
+```
+figures  
+```{r out.width="3.5%"}
+include_graphics("../resources/icon-folder.png")
+```
+manage  
+```{r out.width="3.5%"}
+include_graphics("../resources/icon-folder.png")
+```
+reports  
+```{r out.width="3.5%"}
+include_graphics("../resources/icon-folder.png")
+```
+resources  

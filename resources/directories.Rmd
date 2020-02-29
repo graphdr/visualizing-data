@@ -1,0 +1,57 @@
+
+```{r out.width="2%"}
+include_graphics("../resources/icon-folder.png")
+```
+carpentry  
+```{r out.width="2%"}
+include_graphics("../resources/icon-folder.png")
+```
+data  
+```{r out.width="2%"}
+include_graphics("../resources/icon-folder.png")
+```
+data-raw  
+```{r out.width="2%"}
+include_graphics("../resources/icon-folder.png")
+```
+design  
+```{r out.width="2%"}
+include_graphics("../resources/icon-folder.png")
+```
+explore  
+```{r out.width="2%"}
+include_graphics("../resources/icon-folder.png")
+```
+figures  
+```{r out.width="2%"}
+include_graphics("../resources/icon-folder.png")
+```
+manage  
+```{r out.width="2%"}
+include_graphics("../resources/icon-folder.png")
+```
+reports  
+```{r out.width="2%"}
+include_graphics("../resources/icon-folder.png")
+```
+resources  
+```{r out.width="2%"}
+include_graphics("../resources/icon-document-40px.png")
+```
+.gitignore  
+```{r out.width="2%"}
+include_graphics("../resources/icon-document-40px.png")
+```
+.Renviron  
+```{r out.width="2%"}
+include_graphics("../resources/icon-Rmd.png")
+```
+README.Rmd  
+```{r out.width="2%"}
+include_graphics("../resources/icon-md.png")
+```
+README.md  
+```{r out.width="2%"}
+include_graphics("../resources/icon-Rproj.png")
+```
+portfolio.Rproj  

@@ -1,0 +1,68 @@
+---
+title: "Test Report"
+output: github_document
+---
+
+Richard Layton  
+`r format(Sys.time(), "%Y--%m--%d")`  
+
+```{r}
+library("knitr")  
+opts_knit$set(root.dir = "../")  
+opts_chunk$set(echo = FALSE)
+```
+
+Emphasizing text
+
+1. **Bold** and *italic* are usually mutually exclusive. 
+
+1. **If everything is emphasized, then nothing is emphasized. Use bold and italic as little as possible**. 
+
+1. With serif fonts, either *italics* or **bold** can be used for emphasis. With sans-serif fonts, use **bold** for emphasis. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ## Including Plots -->
+
+<!-- You can also embed plots, for example: -->
+
+<!-- ```{r pressure, echo=FALSE} -->
+<!-- plot(pressure) -->
+<!-- ``` -->
+
+<!-- Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot. -->
+
+<!-- ## Try include_graphics() -->
+
+<!-- ```{r} -->
+<!-- library("png") -->
+<!-- img <- readPNG(system.file("img", "Rlogo.png", package="png")) -->
+<!-- writePNG(img, target = "resources/Rlogo.png") -->
+<!-- ``` -->
+
+
+<!-- ```{r out.width = "10%"} -->
+<!-- library("knitr") -->
+<!-- include_graphics("../resources/Rlogo.png") -->
+<!-- ``` -->
+
+
+

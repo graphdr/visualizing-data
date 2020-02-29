@@ -1,0 +1,44 @@
+---
+output: github_document
+---
+
+<br>
+Copy and paste the following raw Rmd script into your own Rmd file
+
+## week 10 reading prompts  
+
+Spence, Ian (2006) William Playfair and the psychology of graphs. In: *IEEE
+Transactions on Professional Communication.* Alexandria, VA: American
+Statistical Association, section on statistical graphics, 2426--2436.
+
+<br>
+**Prompt:** Explain what the author means by the "psychology of graphs." 
+
+**Response:** 
+
+
+
+<br>
+**Prompt:**  Psychology was identified as its own science in the 1730s and 
+experimental psychology research began in the 1830s. Thus William Playfair's 
+life (1759--1823) overlapped the beginnings of psychology as a science. But 
+he was not a psychologist---he was a craftsman by trade who was exposed to the 
+best minds of the Scottish Enlightenment. His experience included engineering, 
+commerce, and publishing (as well as dubious investment schemes and attempted 
+extortion). Nevertheless, the author makes connections between Playfair and 
+psychology. 
+
+Describe those connections.  
+
+**Response:**  
+
+
+
+<br>
+**Prompt:** In section 2.3, the author describes 5 examples of graphical 
+conventions that Playfair invented or adapted. Discuss your interpretation of 
+each convention in light of our other readings and discussions this term. 
+
+**Response:** 
+
+
