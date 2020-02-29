@@ -71,13 +71,16 @@ After successfully completing this course, students should be able to:
 
 Grades are earned based on the [Institute
 standards](http://www.rose-hulman.edu/campus-life/student-services/registrar/rules-and-procedures/grades.html),
-for example, an “A” is an *honor grade*, a “B” is awarded for *thorough
-competence*, and a “C” indicates that *minimum standards have been met*.
+for example, an
+
+  - “A” is an *honor grade*
+  - “B” is awarded for *thorough competence*
+  - “C” indicates that *minimum standards have been met*
 
 There are no exams. The major deliverables and their relative weights
 are:
 
-  - (70%) Portfolio
+  - (70%) Portfolio of data displays and written critiques
   - (15%) Timely written responses to the reading prompts and the
     presentation prompts
   - (15%) Presenting your work and participating in small-group
@@ -85,19 +88,26 @@ are:
 
 ## homework
 
-Success in this course depends on steady and productive weekly progress.
-Weekly assignments include
+Steady and productive weekly progress is the key to success in this
+course. Weekly assignments include
 
-  - **Obtaining data** with structures appropriate to the assigned
-    display types. Data should be obtained no later than the dates
-    listed in the calendar.  
-  - **Weekly R practice problems** to learn the skills needed to create
-    the portfolio, completed by the following Monday.  
-  - **Weekly readings**, completed before class on the assigned day.
-  - **Reading responses** in writing (typically one every two weeks)
-    completed before class on the day of discussion.
-  - **Presenting your works in progress** of displays D1 through D7 plus
-    written critiques.
+**Obtaining data**  
+with structures appropriate to the assigned display types.
+
+**R practice problems**  
+to learn the skills needed to create the portfolio.
+
+**Readings**  
+Start several days before the due date early to give yourself time to
+reflect on the reading so that our discussions are meaningful.
+
+**Reading responses**  
+in writing (typically one every two weeks) completed before class on the
+day of discussion. Again, start these reflective pieces early so you
+have time to revise and edit.
+
+**Presenting**  
+displays D1 through D7 plus written critiques.
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -106,13 +116,11 @@ Weekly assignments include
 Lab periods are used for working with software and for presentating and
 discussing portfolio work in progress.
 
-  - In the first few labs, we set up the basic software environment:
-    installing software, managing files, obtaining data, and starting
-    the portfolio.
-  - In later labs, every student gives a weekly presentation of that
-    week’s new display with small-group discussion and feedback. When
-    presentations are complete, the remainder of the lab period is used
-    to work on the practice problems and the portfolio.
+  - Week 1 (3 hours) Software studio
+  - Week 2 (3 hours) Data studio
+  - Week 3 (3 hours) Portfolio studio
+  - Week 4–10 (1 hour) Present & discuss data displays D1–D7
+  - Week 4–10 (2 hours) Work, collaborate, solve coding problems, write
 
 ## attendance
 
