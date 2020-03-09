@@ -9,7 +9,7 @@ licensed under
 
 ## contents
 
-[introduction](#introduction)  
+[highlights](#highlights)  
 [README](#readme)  
 [reports](#reports)  
 [variety of data sources](#variety-of-data-sources)  
@@ -23,12 +23,15 @@ licensed under
 [grading](#grading)  
 [references](#references)
 
-## introduction
+## highlights
 
-An exceptional portfolio showcases your ability to communicate truthful
-and compelling stories using quantitative data and effective visual
-rhetoric. My goal is to help you craft a document that you would be
-proud to include in your employment portfolio.
+This section summarizes the portfolio highlights. Subsequent sections
+provide detail in depth.
+
+**Goals.** An exceptional portfolio showcases your ability to
+communicate truthful and compelling stories using quantitative data and
+effective visual rhetoric. My goal is to help you craft a document that
+you would be proud to include in your employment portfolio.
 
 All coursework is directed towards completing a portfolio that
 demonstrates the degree to which you can:
@@ -37,6 +40,45 @@ demonstrates the degree to which you can:
   - Credibly explain your design rationale
   - Produce publication-quality visuals
   - Credibly critique a data display
+
+**The portfolio is a website** that resides on GitHub as a private
+repository. When the course is complete you may edit the repo and make
+it public if there are elements you want to share with prospective
+employers. A [sample
+README](https://github.com/graphdr/portfolio-sample) illustrates the
+layout of the main page.
+
+**You start writing portfolio content** in the Portfolio studio session
+(week 3) after we have introduced R Markdown.
+
+**You write a report for each display** presenting the context,
+graph(s), and critique. The reasoning of the critique is supported by
+our readings, discussions, and reflections with relevant citations from
+that work. Seven reports are required:
+
+  - [D1 distributions](cm301-report-display-reqts.md#D1-distributions)
+  - [D2 multiway](cm301-report-display-reqts.md#D2-multiway)
+  - [D3 correlations](cm301-report-display-reqts.md#D3-correlations)
+  - [D4 injuries or
+    fatalities](cm301-report-display-reqts.md#D4-injuries-or-fatalities)
+  - [D5 redesign a graphical
+    lie](cm301-report-display-reqts.md#D5-redesign-a-graphical-lie)
+  - [D6 multivariate](cm301-report-display-reqts.md#D6-multivariate)
+  - [D7 self-taught](cm301-report-display-reqts.md#D7-self-taught)
+
+**Data requirements include:**
+
+  - Each display has a specific minimum required [data
+    structure](cm301-report-display-reqts.md#portfolio-data-requirements)
+  - The portfolio is expected to use a [variety of data
+    sources](#variety-of-data-sources)
+
+**Graph requirements** in addition to the required display types
+include:
+
+  - At least one graph must tell a [compelling story](#compelling-story)
+  - A maximum of 2 displays can be [reproductions](#reproductions)
+  - A maximum of 3 displays can be [redesigns](#redesigns)
 
 ## README
 
@@ -313,8 +355,8 @@ chart to a dot plot; adding information, such as extending a time series
 to include more data; or correcting a lie, such as converting nominal
 dollars to constant dollars.
 
-The only required redesign is D5, Redesigning a graphical lie. Other
-displays in your portfolio can be redesigns as long as the data
+The only required redesign is D5, Redesigning a graphical lie. A maximum
+of two additional displays can be redesigns as long as the data
 structure satisfies the display requirements.
 
 The portfolio must include an image of the original graph with a
