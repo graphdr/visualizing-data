@@ -2,7 +2,6 @@
 output: github_document
 ---
 
-
 ## instructions
 
 If you know how to use an R Markdown script, copy and paste the script below 
