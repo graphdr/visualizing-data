@@ -2,8 +2,14 @@
 output: github_document
 ---
 
-<br>
-Copy and paste the following raw Rmd script into your own Rmd file
+
+## instructions
+
+If you know how to use an R Markdown script, copy and paste the script below into a new Rmd file and respond to the prompts before the due date. 
+
+
+If not, just copy and paste the text below into a Word document for now and respond to the prompts before the due date. You can transfer it to an Rmd script once we have introduced the topic in class. 
+
 
 ## week 2 reading prompts  
 
