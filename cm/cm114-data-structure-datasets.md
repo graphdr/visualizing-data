@@ -99,29 +99,6 @@ graph design* worksheet.
 | Bosnia and Herzegovina |                      0.48 |              17.3 | in transition |
 | Brazil                 |                     18.10 |               8.0 | developing    |
 
-## 9\. US median hourly wages
-
-A sample of the data that accompanies the *Relating data structure and
-graph design* worksheet.
-
-| country                | homicides\_gun\_per\_100k | N\_guns\_per\_100 | hierarchy     |
-| :--------------------- | ------------------------: | ----------------: | :------------ |
-| Albania                |                      1.76 |               8.6 | in transition |
-| Algeria                |                      0.06 |               7.6 | developing    |
-| Argentina              |                      3.02 |              10.2 | developing    |
-| Armenia                |                      0.29 |              12.5 | in transition |
-| Australia              |                      0.14 |              15.0 | developed     |
-| Austria                |                      0.22 |              30.4 | developed     |
-| Azerbaijan             |                      0.12 |               3.5 | in transition |
-| Bahamas                |                     15.37 |               5.3 | developing    |
-| Bahrain                |                      0.00 |              24.8 | developing    |
-| Barbados               |                      2.99 |               7.8 | developing    |
-| Belarus                |                      0.12 |               7.3 | in transition |
-| Belgium                |                      0.68 |              17.2 | developed     |
-| Belize                 |                     21.82 |              10.0 | developing    |
-| Bosnia and Herzegovina |                      0.48 |              17.3 | in transition |
-| Brazil                 |                     18.10 |               8.0 | developing    |
-
 ## references
 
 <div id="refs">
