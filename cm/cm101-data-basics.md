@@ -290,7 +290,7 @@ Note: The instruction to **classify a data structure** implies that you
     package does when we use it to script similar operations.
   - Classify the data structure
 
-A [partial answer](resources/VADeaths-tidy-answer.png) is provided so
+A [partial answer](../resources/VADeaths-tidy-answer.png) is provided so
 you can check your work.
 
 **2. CSV data from FiveThirtyEight**
