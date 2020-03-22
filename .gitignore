@@ -76,8 +76,8 @@ vignettes/*.pdf
 
 .Rproj.user
 
-# allow specific files
-data-raw
+# omit data-raw except for allow specific files
+data-raw/*
 !/data-raw/DSR-table1.xlsx
 !/data-raw/VADeaths.xlsx
 !/data-raw/scanvote.csv
