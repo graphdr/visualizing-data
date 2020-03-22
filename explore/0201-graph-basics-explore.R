@@ -1,13 +1,20 @@
-# explore graph basics with ggplot2
-# me447
-# RAL 2019-03-11
+# ---------- example of a recommended script header ---------- #
+
+
+
+# explore graph basics with ggplot2   <- what it is
+# me447                               <- the course 
+# RAL 2020-03-11                      <- author/date
 
 
 
 
-# example of a code header to NOT USE
-#
-# **********************************************************************;
+# ---------- example of an unnecessarily verbose script header ---------- #
+
+
+
+
+# ********************************************************************** 
 # Project           : Sample Drug, Sample Indication,Study1
 #
 # Program name      : sample.sas
@@ -21,9 +28,9 @@
 # Revision History  :
 #
 # Date        Author      Ref    Revision (Date in YYYYMMDD format)
-# 20100818    smithb      1      Removed subjects with who have not been dosed per spec.
+# 20100818    smithb      1      Removed subjects not been dosed per spec.
 #
-# **********************************************************************;
+# **********************************************************************
 
 
 
