@@ -2,5 +2,5 @@
 
 library("graphclassmate")
 library("socviz")
-titanic
+
 
