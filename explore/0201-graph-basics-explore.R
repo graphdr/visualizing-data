@@ -1,17 +1,11 @@
-# ---------- example of a recommended script header ---------- #
-
-
-
-# explore graph basics with ggplot2   <- what it is
-# me447                               <- the course 
-# RAL 2020-03-11                      <- author/date
+# explore data basics   <- topic
+# me447                 <- course 
+# RAL 2020-03-11        <- author/date
 
 
 
 
-# ---------- example of an unnecessarily verbose script header ---------- #
-
-
+# -------- AVOID unnecessarily verbose script headers, for example: --------- 
 
 
 # ********************************************************************** 

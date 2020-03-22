@@ -8,7 +8,8 @@ data basics
 
 ## contents
 
-[prerequisites](#prerequisites)  
+[prerequisites](#prerequisites)
+
 [data basics slides](../slides/sd021-data-basics.pdf)  
 [four basic data skills](#four-basic-data-skills)  
 [data in base R and in R packages](#data-in-base-r-and-in-r-packages)  
@@ -22,9 +23,10 @@ data basics
   - Your [project directory
     structure](cm501-proj-m-manage-files.md#plan-the-directory-structure)
     satisfies the course requirements  
-  - Download the CSV and XLSX files from the course [`data-raw`
+  - Manually download the CSV and XLSX files from the course [`data-raw`
     directory](https://github.com/DSR-RHIT/me447-visualizing-data/tree/master/data-raw)
-    and save them to your own `data-raw` directory
+    and save them to your own `data-raw` directory  
+  - ![](../resources/icon-moodle-video.png) Data basics lecture (17 min)
 
 ## four basic data skills
 
