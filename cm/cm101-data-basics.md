@@ -8,12 +8,13 @@ data basics
 
 ## contents
 
-[prerequisites](#prerequisites)
-
-[data basics slides](../slides/sd021-data-basics.pdf)  
-[four basic data skills](#four-basic-data-skills)  
-[data in base R and in R packages](#data-in-base-r-and-in-r-packages)  
-[reading raw data files](#reading-raw-data-files)  
+[prerequisites](#prerequisites)  
+[data in base R](#data-in-base-r)  
+[data in R packages](#data-in-r-packages)  
+[raw data files](#raw-data-files)  
+[reading XLSX files](#reading-xlsx-files)  
+[reading CSV files](#reading-csv-files)  
+[webscraping ASCII data](#webscraping-ascii-data)  
 [data directory write and read](#data-directory-write-and-read)  
 [exercises](#exercises)
 
@@ -23,32 +24,19 @@ data basics
   - Your [project directory
     structure](cm501-proj-m-manage-files.md#plan-the-directory-structure)
     satisfies the course requirements  
-  - Manually download the CSV and XLSX files from the course [`data-raw`
-    directory](https://github.com/DSR-RHIT/me447-visualizing-data/tree/master/data-raw)
-    and save them to your own `data-raw` directory  
-  - ![](../resources/icon-moodle-video.png) Data basics lecture (17 min)
+  - ![](../resources/icon-moodle-video.png) Data basics lecture (17
+    min)  
+  - Create an R script `explore/0201-data-basics.R`, that is, an R
+    script named `0201-data-basics.R` located in the `explore`
+    directory. By starting the filename with the numbers `0201`, I’m
+    indicating the week `02` and day `01` (Monday).
 
-## four basic data skills
+## data in base R
 
-I’ll recap some of the highlights from the slides here.
+Launching R loads all data sets in base R. You can use these data
+primarily for tutorials and practice sessions.
 
-Preparing data for graphs starts with four basic skills
-
-  - Obtain the raw data  
-  - Read raw data into R and examine it  
-  - Identify the structure of your data  
-  - Tidy the data and write to file
-
-Data are everywhere
-
-  - Data are provided in base R  
-  - Data are provided in R packages  
-  - Online sources are ubiquitous
-  - You may even have data of your own from prior courses or research
-
-## data in base R and in R packages
-
-For practice, use data in base R
+For example, in the Console type,
 
 ``` r
 data() # to list data sets in base R 
@@ -65,10 +53,21 @@ yields
  etc.
 ```
 
-For practice, use data in R packages
+For an ecxample of a dataset help page, in the Console type,
+
+    ? CO2
+
+## data in R packages
+
+Loading a package with `library()` loads all the data sets in the
+package. You can use these data primarily for tutorials and practice
+sessions.
+
+For example, in the Console type,
 
 ``` r
-data(package = "dplyr") # to list data sets an R package 
+library("dplyr")
+data(package = "dplyr")
 ```
 
 yields
@@ -82,48 +81,67 @@ yields
  #> storms             Storm tracks data
 ```
 
-To show the data set help page
+To show the data set help page, in the Console type,
 
-``` r
-library("graphclassmate")
-data(package = "graphclassmate")
-? metro_pop
-```
+    ? starwars
 
-Data in base R and in R packages are automatically loaded
+## raw data files
 
-  - Launching R loads all data sets in base R  
-  - Loading a package with `library()` loads all the data sets in the
-    package  
-  - All other data files have to be read or web-scraped
+For this work session, manually download the CSV and XLSX files from the
+course [`data-raw`
+directory](https://github.com/graphdr/visualizing-data/tree/master/data-raw)
+and save them to your own `data-raw` directory. In another session we
+will cover how to automate the downloads.
 
-## reading raw data files
-
-File management
+Generally, when treating data files in their original form,
 
   - Save original data files in the `data-raw` directory  
   - Data in their original form are never edited manually  
   - Read the raw data with R scripts  
-  - R scripts are saved in the `carpentry` or `explore` directories
+  - For learning R, save your R scriupts in the `explore` directory
+  - For scripts associates with your portfolio, save the R scripts in
+    the `carpentry` directory
 
-Suppose `data-raw/` contains data in an Excel file
+## reading XLSX files
 
-  - readxl is the package (you will have to install the package  
+Your `data-raw/` directory should contain the `DSR-table1.xlsx` file.
+
+  - readxl is the package (you will have to install the package)  
   - `read_excel()` is the function
 
-<!-- end list -->
+In your open R script, type the following,
 
 ``` r
 library("readxl")
-tidy_data <- read_excel(path  = "data-raw/DSR-table1.xlsx", 
-                        sheet = "DSR-table1")
+df1 <- read_excel(path  = "data-raw/DSR-table1.xlsx", 
+        sheet = "DSR-table1")
 ```
 
-We can pretty-print the data using `knitr::kable()`
+If a data set is small enough, we can view it in the Console by typing
+its name, for example,
 
-``` r
-knitr::kable(tidy_data)
-```
+    df1
+
+We can pretty-print the data using `knitr::kable()`. Add the following
+to your script.
+
+    library("knitr")
+    kable(df1)
+
+When you use this function in an R script, it prints the table to your
+Console
+
+    |country     | year|  cases| population|
+    |:-----------|----:|------:|----------:|
+    |Afghanistan | 1999|    745|   19987071|
+    |Afghanistan | 2000|   2666|   20595360|
+    |Brazil      | 1999|  37737|  172006362|
+    |Brazil      | 2000|  80488|  174504898|
+    |China       | 1999| 212258| 1272915272|
+    |China       | 2000| 213766| 1280428583|
+
+Later, we’ll be using the `kable()` function in an R Markdown script.
+Then the function produces a prettier table like this:
 
 | country     | year |  cases | population |
 | :---------- | ---: | -----: | ---------: |
@@ -134,47 +152,54 @@ knitr::kable(tidy_data)
 | China       | 1999 | 212258 | 1272915272 |
 | China       | 2000 | 213766 | 1280428583 |
 
-Suppose `data-raw/` contains data in a CSV file
-
-  - readr is the package (part of the tidyverse)
-  - `read_csv()` is the function
-
-<!-- end list -->
+`read_excel()` produces a tibble. Add the `class()` function to your
+script,
 
 ``` r
-library("tidyverse") # loads the readr package 
-tidy_data_2 <- read_csv(file = "data-raw/scanvote.csv")
-```
-
-We can pretty-print the top n rows with `head()`
-
-``` r
-tidy_data_2 %>% 
-    head(., n = 5L) %>% 
-    kable()
-```
-
-| District      |  Yes |   Pop | Country |
-| :------------ | ---: | ----: | :------ |
-| Uusimaa       | 70.8 | 117.5 | Fin     |
-| Turku ja Pori | 53.4 |  32.0 | Fin     |
-| Hame          | 57.8 |  39.5 | Fin     |
-| Kymi          | 65.2 |  31.8 | Fin     |
-| Ahvenanmaa    | 51.9 |  15.4 | Fin     |
-
-`read_excel()` and `read_csv()` produce tibbles
-
-``` r
-class(tidy_data)
+class(df1)
 ```
 
     #> [1] "tbl_df"     "tbl"        "data.frame"
 
+## reading CSV files
+
+Your `data-raw/` directory should contain the `scanvote.csv` file.
+
+  - readr is the package (part of the tidyverse)
+  - `read_csv()` is the function
+
+In your open R script, type the following,
+
 ``` r
-class(tidy_data_2)
+library("tidyverse") # loads the readr package 
+df2 <- read_csv(file = "data-raw/scanvote.csv")
+```
+
+We can pretty-print the top `n` rows with `head()`
+
+``` r
+head(df2, n = 5L)
+```
+
+    #> # A tibble: 5 x 4
+    #>   District        Yes   Pop Country
+    #>   <chr>         <dbl> <dbl> <chr>  
+    #> 1 Uusimaa        70.8 118.  Fin    
+    #> 2 Turku ja Pori  53.4  32   Fin    
+    #> 3 Hame           57.8  39.5 Fin    
+    #> 4 Kymi           65.2  31.8 Fin    
+    #> 5 Ahvenanmaa     51.9  15.4 Fin
+
+`read_csv()` produces a tibble. Add the `class()` function to your
+script,
+
+``` r
+class(df2)
 ```
 
     #> [1] "spec_tbl_df" "tbl_df"      "tbl"         "data.frame"
+
+## webscraping ASCII data
 
 Confine your webscraping (for now) to data in ASCII format
 
@@ -187,25 +212,24 @@ With online data in ASCII format, webscraping is easy
   - `utils` is the package  
   - `read.table()` is the function
 
-<!-- end list -->
+Add the following to your R script.
 
 ``` r
 library("utils")
-url <- 
-  "http://www.prdh.umontreal.ca/BDLC/data/alb/Population.txt"
+url <- "http://www.prdh.umontreal.ca/BDLC/data/alb/Population.txt"
 
-df  <- read.table(url,   
+df3  <- read.table(url,   
                   skip = 2, 
                   header = TRUE, 
                   stringsAsFactors = FALSE)
 
-df <- as_tibble(df)
+df3 <- as_tibble(df3)
 ```
 
-Examine it and write it to the `data-raw` directory
+Examine it
 
 ``` r
-glimpse(df)
+glimpse(df3)
 ```
 
     #> Observations: 10,212
@@ -216,9 +240,13 @@ glimpse(df)
     #> $ Male   <dbl> 8133.86, 8142.91, 8240.34, 8244.01, 8154.78, 7991.74, 7...
     #> $ Total  <dbl> 15998.71, 16079.36, 16265.15, 16261.73, 16080.37, 15751...
 
-## data directory write and read
+Write it to the `data-raw` directory. Add the following to your script,
 
-Data beyond the “raw” stage are written to file in the `data` directory
+``` r
+write_csv(df3, path = "data-raw/alberta-mortality.csv")
+```
+
+## data directory write and read
 
 Write functions
 
@@ -231,6 +259,13 @@ Read functions for further data carpentry
 read_csv() 
 readRDS()  
 ```
+
+Anytime you want to know about a function arguments, invoke the package
+using the `library()` function, then in the Console type `?
+function-name`, for example,
+
+    library("tidyverse")
+    ? write_csv() 
 
 ## exercises
 
@@ -254,6 +289,9 @@ Note: The instruction to **classify a data structure** implies that you
     manually, you develop a better understanding of what the tidyr
     package does when we use it to script similar operations.
   - Classify the data structure
+
+A [partial answer](resources/VADeaths-tidy-answer.png) is provided so
+you can check your work.
 
 **2. CSV data from FiveThirtyEight**
 
