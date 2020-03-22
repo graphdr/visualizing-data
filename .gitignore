@@ -6,6 +6,7 @@ resources/data-raw
 resources/images
 resources/readings
 student_work
+asynchronous_lectures
 
 # files
 README.Rmd
