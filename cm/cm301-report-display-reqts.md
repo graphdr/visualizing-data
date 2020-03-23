@@ -81,14 +81,12 @@ The distinguishing characteristic of multiway data is that there is a
 quantitative value associated with every combination of levels of two
 independent categorical variables.
 
-  - 2019: For those students who discussed it with me in lab, we will
-    accept time as an ordinal categorical variable in a multiway graph  
-  - 2020: Time as a categorical variable: Though time can be considered
-    an ordinal categorical variable, time series data are more commonly
-    displayed using line graphs or spark charts where the dots can be
-    connected. We would not expect to connect the dots in a multiway
-    graph, thus we avoid using date and time as one of the two
-    independent categories.
+Do not use time as a variable in a multiway plot. Though time can be
+considered an ordinal categorical variable, time series data are more
+commonly displayed using line graphs or spark charts where the dots can
+be connected. We would not expect to connect the dots in a multiway
+graph, thus we avoid using date and time as one of the two independent
+categories.
 
 Graph both the original multiway and its dual (swapping rows and
 panels). Include only one of these graphs in your portfolio. Select the
