@@ -37,6 +37,10 @@ each tutorial.
 
 You can do the exercises at the end of the tutorial in this same script.
 
+A final note on procedure. I will often create my own version of the
+explore scripts. You can find them in the `explore` directory on the
+course website.
+
 ## data in base R
 
 Launching R loads all data sets in base R. You can use these data
