@@ -95,8 +95,8 @@ design that best conveys the stories in your data.
 Data requirements
 
   - One quantitative variable with a minimum of 24 observations
-  - Two independent categorical variables with minimum numbers of levels
-    as follows
+  - Two independent categorical variables with one of the following
+    combinations,
       - 3 levels in category 1 and at least 8 levels in category 2
       - 4 levels in category 1 and at least 6 levels in category 2  
       - 5 levels in category 1 and at least 5 levels in category 2

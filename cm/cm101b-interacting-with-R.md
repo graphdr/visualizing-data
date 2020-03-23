@@ -119,7 +119,7 @@ Conventional usage is `<-`. As Robert Kabakoff (2011) explains,
 
 > R allows the = sign to be used for object assignments. However, you
 > won’t find many programs written that way because it’s not standard
-> syntax, there are some situations in which it wonâ€™t work, and R
+> syntax, there are some situations in which it won’t work, and R
 > programmers will make fun of you.
 
 If you use = and it works, I will not make fun of you.
@@ -166,7 +166,7 @@ their values.
 ![](../resources/panes-2.png)
 
 In the corner of the Environment pane, use the pull-down menu to change
-â€Listâ€ to â€Gridâ€ to list the variable names, values, and types.
+”List” to ”Grid” to list the variable names, values, and types.
 
 ![](../resources/panes-3.png)
 
@@ -175,20 +175,34 @@ To list variables using the console, use `ls()`,
 ``` r
 # type this in your Console
 ls()
-#> [1] "name" "test" "x"    "y"    "z"
+#>  [1] "add_lines"           "checkfile"           "chunk"              
+#>  [4] "describe_packages"   "initialize_R_script" "inline"             
+#>  [7] "inline_yaml"         "name"                "print_packages"     
+#> [10] "set_fig_dim"         "test"                "x"                  
+#> [13] "y"                   "yaml"                "z"
 ```
 
 To list the variables, values, and types, use `ls.str()`
 
-``` r
+```` r
 # type this in your Console
 ls.str()
+#> add_lines : function (new_lines, lesson_file)  
+#> checkfile : function (path, recursive = TRUE, ...)  
+#> chunk :  chr "```"
+#> describe_packages : function (str_pkg)  
+#> initialize_R_script : function (lesson_file)  
+#> inline : function (x = "")  
+#> inline_yaml : function (x = "")  
 #> name :  chr "John"
+#> print_packages : function (result)  
+#> set_fig_dim : function (fig.width, fig.height)  
 #> test :  logi TRUE
 #> x :  num 0.524
 #> y :  num 0.5
+#> yaml :  chr "---"
 #> z :  cplx 0+2i
-```
+````
 
 **Variable names in R** must start with a letter (A-Z) or (a-z). Names
 can include letters, digits (0-9), dots (.), and underscores (\_). R is
@@ -209,7 +223,7 @@ New File \> R Script*.
 
 Save the script in the *explore* folder using the filename
 
-    0204-more-R-basics-explore.R
+    0203-more-R-basics-explore.R
 
 *File \> Save As…*
 
@@ -295,6 +309,13 @@ Click Source and the graph should appear in the Plots pane.
 ## references
 
 <div id="refs">
+
+<div id="ref-Wickham+Grolemund:2017">
+
+Wickham H and Grolemund G (2017) *R for Data Science.* O’Reilly Media,
+Inc., Sebastopol, CA <https://r4ds.had.co.nz/>
+
+</div>
 
 </div>
 

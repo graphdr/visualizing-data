@@ -45,7 +45,7 @@ installed using these commands,
 Use *File \> New File \> R Script* to create a new R script in your
 `explore` directory
 
-    explore/0201-graph-basics-explore.R 
+    explore/0204-graph-basics-explore.R 
 
 At the top of the script, load the packages we’ll be using. As we work
 through the tutorial, add each line of code, one at a time, to your
@@ -640,15 +640,15 @@ For the best results in your portfolio, you should always conclude your
 design by saving the image and sizing it at the same time,
 
 ``` r
-ggsave(filename = "figures/0201-graph-basics-gapminder.png", 
+ggsave(filename = "figures/0204-graph-basics-gapminder.png", 
        width = 6.5,
        height = 7.5,
        units = "in", 
        dpi = 300)
-include_graphics("../figures/0201-graph-basics-gapminder.png")
+include_graphics("../figures/0204-graph-basics-gapminder.png")
 ```
 
-<img src="../figures/0201-graph-basics-gapminder.png" width="90%" />
+<img src="../figures/0204-graph-basics-gapminder.png" width="90%" />
 
 <br> <a href="#top">▲ top of page</a>
 
