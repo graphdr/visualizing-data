@@ -27,54 +27,50 @@
 # **********************************************************************
 
 
+
 # read an XLSX file already from the data-raw directory
 library("readxl")
 df1 <- read_excel(path = "data-raw/DSR-table1.xlsx", sheet = "DSR-table1")
 
+# examine it
 library("knitr")
 kable(df1)
 class(df1)
+
+
 
 # read a CSV file already from the data-raw directory
 library("tidyverse") # loads the readr package 
 df2 <- read_csv(file = "data-raw/scanvote.csv")
 
+# examine it
 head(df2, n = 5L)
 class(df2)
 
 
 
+# webscrape ASCII data
+library("utils")
+url <- "http://www.prdh.umontreal.ca/BDLC/data/alb/Population.txt"
+df3  <- read.table(url,   
+                  skip = 2, 
+                  header = TRUE, 
+                  stringsAsFactors = FALSE)
+
+# convert to a tibble 
+df3 <- as_tibble(df3)
+
+# examine it
+glimpse(df3)
 
 
 
 
+# exercise
+url <- "https://projects.fivethirtyeight.com/soccer-api/club/spi_matches.csv"
+df4 <- read_csv(url)
+glimpse(df4)
+write_csv(df4, "data-raw/spi-matches.csv")
 
 
-
-
-
-
-
-
-
-############################################
-
-library("tidyverse")
-library("readxl")
-
-# url <- "https://projects.fivethirtyeight.com/soccer-api/club/spi_matches.csv"
-# df <- read_csv(url) %>% glimpse()
-
-
-
-# defunct
-# url <- "https://ifap.ed.gov/fedschcodelist/attachments/1617FedSchoolCodeList.xlsx"
- 
- 
-
-# df  <- read_excel(url,skip = 6, sheet = "Table_P-1b")
-library("rio")
-url <- "http://ftp.cdc.gov/pub/Health_Statistics/NCHS/NHIS/SHS/2018_SHS_Table_P-1.xlsx"
-df <- import(url, skip = 1, sheet = "Table_P-1b")
-str(df)
 

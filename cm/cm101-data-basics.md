@@ -20,16 +20,22 @@ data basics
 
 ## prerequisites
 
-  - Start every work session by launching `portfolio.Rproj`  
+  - ![](../resources/icon-moodle-video.png) Data basics lecture (17
+    min)  
+  - Then start the work session by launching `portfolio.Rproj`  
   - Your [project directory
     structure](cm501-proj-m-manage-files.md#plan-the-directory-structure)
     satisfies the course requirements  
-  - ![](../resources/icon-moodle-video.png) Data basics lecture (17
-    min)  
-  - Create an R script `explore/0201-data-basics.R`, that is, an R
-    script named `0201-data-basics.R` located in the `explore`
-    directory. By starting the filename with the numbers `0201`, I’m
-    indicating the week `02` and day `01` (Monday).
+  - Create `explore/0201-data-basics.R`
+
+The meaning of this last instruction is to create an R script named
+`0201-data-basics.R` in your `explore` directory. My file-naming
+convention is to indicate the week of the lesson (`02`), the day of the
+week (`01`), and a brief description of the topic (`-data-basics`), and
+of course the file type (`.R`). Typically, we will have a new script for
+each tutorial.
+
+You can do the exercises at the end of the tutorial in this same script.
 
 ## data in base R
 
@@ -53,7 +59,7 @@ yields
  etc.
 ```
 
-For an ecxample of a dataset help page, in the Console type,
+For an example of a dataset help page, in the Console type,
 
     ? CO2
 
@@ -98,7 +104,7 @@ Generally, when treating data files in their original form,
   - Save original data files in the `data-raw` directory  
   - Data in their original form are never edited manually  
   - Read the raw data with R scripts  
-  - For learning R, save your R scriupts in the `explore` directory
+  - For learning R, save your R scripts in the `explore` directory
   - For scripts associates with your portfolio, save the R scripts in
     the `carpentry` directory
 
@@ -289,20 +295,24 @@ Note: The instruction to **classify a data structure** implies that you
     manually, you develop a better understanding of what the tidyr
     package does when we use it to script similar operations.
   - Classify the data structure
+  - When you have finished, a [partial
+    answer](../resources/VADeaths-tidy-answer.png) is provided so you
+    can check your work.
 
-A [partial answer](../resources/VADeaths-tidy-answer.png) is provided so
-you can check your work.
-
-**2. CSV data from FiveThirtyEight**
+**2. Webscrape CSV data from FiveThirtyEight**
 
 We will use the FiveThirtyEight data from:
 <https://projects.fivethirtyeight.com/soccer-api/club/spi_matches.csv>
 
-  - Create the R script `explore/0202-data-basics-explore.R` and assign
-    the URL to the variable name `url`
-  - In the R script, use `read_csv(url)` to scrape the data from the web
+  - In your open R script, assign the URL above to the variable name
+    `url`
+  - In the R script, use `read_csv(url)` to scrape the data from the
+    web, and assign it to the variable name `df4`
   - Use `glimpse()` to examine the data
-  - Write the CSV file to your `data-raw` directory
+  - Write the CSV file to your `data-raw` directory using the name
+    `spi-matches.csv`
+  - Have a look in your `data-raw` directory to confirm that the file is
+    there.
 
 In addition,
 
@@ -320,7 +330,9 @@ Services Administration (GSA) at the following URL
   - Manually open the file and examine the contents
   - Based on the structure you see, use `read_excel()` to input the data
     into R
-  - Write the CSV file to your `data` directory
+  - Write the CSV file to your `data-raw` directory with the filename
+    `nsn-extract-5-9-18.csv`. At this point, I consider the CSV file raw
+    data, just as if we have used our script to webscrape it directly.
 
 In addition,
 
