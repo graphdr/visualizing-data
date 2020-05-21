@@ -1,4 +1,4 @@
-graphical improvisation
+graph design improvisation
 ================
 
 ![](../resources/cm216-header.png) <small> <br> <i>Endlessly
