@@ -1,8 +1,10 @@
 learn a display
 ================
 
-<img src="../resources/cm211-header.png" width="100%" /> <small> <br>
-<i>Moon, Earth-rise, Earth from the moon,</i> courtesy NASA.  
+![](../resources/cm211-header.png)
+
+<small> <br> <i>Moon, Earth-rise, Earth from the moon,</i> courtesy
+NASA.  
 <br> </small>
 
 ## contents
@@ -25,9 +27,10 @@ that you have to learn the syntax of a graphics system other than
 ggplot2. The structure of the R graphics system is illustrated in the
 figure.
 
-<img src="../resources/cm211-00.png" width="70%" /> <small><br><i>Figure
-1.14 The structure of the R graphics system</i> by Paul Murrell
-([2011](#ref-Murrell:2011))<br></small>
+![](../resources/cm211-00.png)
+
+<small><br><i>Figure 1.14 The structure of the R graphics system</i> by
+Paul Murrell ([2011](#ref-Murrell:2011))<br></small>
 
 Working at a lower level—grid, graphics, or grDevices—can be quite a
 challenge. I would expect that if you have to learn a new graphics
@@ -67,19 +70,19 @@ rectangle, the Monday values are graphed for eight successive weeks,
 then the Tuesday values are graphed, and so forth. For each cycle
 subseries, the mean of the values is shown by a horizontal line segment.
 
-<img src="../resources/cm211-cycle-plot-02.png" width="70%" />
+![](../resources/cm211-cycle-plot-02.png)
 
 <br> Example: month of year cycle. First, at the left of the data
 rectangle, the October values are graphed for 34 successive years, then
 the November values are graphed, and so forth.
 
-<img src="../resources/cm211-cycle-plot-01.png" width="70%" />
+![](../resources/cm211-cycle-plot-01.png)
 
 <br> Example: month of year cycle. First, at the left of the data
 rectangle, the January values are graphed for 11 successive years, then
 the February values are graphed, and so forth.
 
-<img src="../resources/cm211-cycle-plot-04.png" width="70%" />
+![](../resources/cm211-cycle-plot-04.png)
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -119,7 +122,7 @@ Resources
   - Two categorical variables: age group (6 levels) and vaccination
     status (2 levels)
 
-<img src="../resources/cm211-multivariate-bar.png" width="50%" />
+![](../resources/cm211-multivariate-bar.png)
 
 <br> Example
 
@@ -127,7 +130,7 @@ Resources
   - Four categorical variables: Sex (2 levels), shipboard status (4
     levels), age (2 levels), and outcome (2 levels)
 
-<img src="../resources/cm211-multivariate-bar-02.png" width="70%" />
+![](../resources/cm211-multivariate-bar-02.png)
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -153,14 +156,14 @@ Resources
 
 <br> Example OHLC plot, bar-style
 
-<img src="../resources/cm211-financial-plot-01.png" width="70%" />
+![](../resources/cm211-financial-plot-01.png)
 
 <br> Example OHLC plot, candle-stick-style. Here the high and low are
 the whiskers and the open and close are the box limits. Green indicates
 that the closing price was higher than the opening price; red that the
 closing price was lower.
 
-<img src="../resources/cm211-financial-plot-05.png" width="70%" />
+![](../resources/cm211-financial-plot-05.png)
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -191,11 +194,11 @@ Resources
 
 <br> Example
 
-<img src="../resources/cm211-diverging-stacked-bar-03.png" width="70%" />
+![](../resources/cm211-diverging-stacked-bar-03.png)
 
 <br> Example
 
-<img src="../resources/cm211-diverging-stacked-bar-04.png" width="70%" />
+![](../resources/cm211-diverging-stacked-bar-04.png)
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -230,14 +233,14 @@ Resources
 
 <br> Example of a linked micromap.
 
-<img src="../resources/cm211-micromap-03.png" width="50%" />
+![](../resources/cm211-micromap-03.png)
 
 <br> Example of micromaps in a small-multiples design. Area and color
 have been used correctly to show the geographic extent of drought.
 Source: [New York
 Times](https://archive.nytimes.com/www.nytimes.com/interactive/2012/07/20/us/drought-footprint.html?_r=0)
 
-<img src="../resources/cm211-micromap-04.png" width="100%" />
+![](../resources/cm211-micromap-04.png)
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -276,15 +279,15 @@ Resources
 
 <br> Example
 
-<img src="../resources/cm211-proportional-symbol-map-01.png" width="70%" />
+![](../resources/cm211-proportional-symbol-map-01.png)
 
 <br> Example
 
-<img src="../resources/cm211-proportional-symbol-map-02.png" width="70%" />
+![](../resources/cm211-proportional-symbol-map-02.png)
 
 <br> Example
 
-<img src="../resources/cm211-proportional-symbol-map-03.png" width="70%" />
+![](../resources/cm211-proportional-symbol-map-03.png)
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -309,11 +312,11 @@ Resources
 
 <br> Example
 
-<img src="../resources/cm211-dot-density-map-01.png" width="70%" />
+![](../resources/cm211-dot-density-map-01.png)
 
 <br> Example
 
-<img src="../resources/cm211-dot-density-map-02.png" width="70%" />
+![](../resources/cm211-dot-density-map-02.png)
 
 <br> <a href="#top">▲ top of page</a>
 

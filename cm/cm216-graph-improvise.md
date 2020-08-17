@@ -1,10 +1,19 @@
-improvise
+graph design improvisation
 ================
 
-<img src="../resources/cm216-header.png" width="100%" /> <small> <br>
-<i>Endlessly Improvised</i> by Chris Piascik is licensed under
+![](../resources/cm216-header.png) <small> <br> <i>Endlessly
+Improvised</i> by Chris Piascik is licensed under
 <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/legalcode">CC
 BY-NC-ND 2.0</a> <br> </small>
+
+[introduction](#introduction)  
+[data](#data)  
+[rectangles: grade level](#rectangles-grade-level)  
+[rectangles: curriculum model](#rectangles-curriculum-model)  
+[rectangles: developmental model](#rectangles-developmental-model)  
+[line segment: vocational path](#line-segment-vocational-path)  
+[theme work](#theme-work)  
+[published display](#published-display)
 
 ## introduction
 
@@ -12,8 +21,8 @@ The type of graphical improvisation I’ll illustrate here can be
 described as drafting graphical primitives (points, lines, rectangles,
 text, etc.) on a Cartesian grid that is invisible to the viewer.
 
-A client gave me the following figure to aspects of the US educational
-system. (Sipes, [2013](#ref-Sipes:2013)).
+A client gave me the following figure to illustrate aspects of the US
+educational system (Sipes, [2013](#ref-Sipes:2013)).
 
   - The author used the triangle shape to imply the progression from
     entry level at the bottom to exit level at the top.
@@ -22,11 +31,10 @@ system. (Sipes, [2013](#ref-Sipes:2013)).
     shown along the outer right edge.
   - Along the inner sides of the triangle are overlapping labels of
     model types, indicating at which level of schooling the models are
-    used.
-  - On the left are models of cognitive development; on the right are
-    models of curricula.
+    used. On the left are models of cognitive development; on the right
+    are models of curricula.
 
-<img src="../resources/cm216-01.png" width="78.75%" />
+<img src="../resources/cm216-01.png" width="75%" />
 
 At first glance, the data we have is
 
@@ -103,12 +111,12 @@ kable(df)
 Graph the quantitative variable
 
 ``` r
-ggplot(data = df, mapping = aes(x = year, y = pct)) +
+    ggplot(data = df, mapping = aes(x = year, y = pct)) +
         geom_line() +
         geom_point()
 ```
 
-<img src="images/cm216-unnamed-chunk-4-1.png" width="78.75%" />
+<img src="images/cm216-unnamed-chunk-2-1.png" width="78.75%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -159,7 +167,7 @@ p <- ggplot() +
 p
 ```
 
-<img src="images/cm216-unnamed-chunk-6-1.png" width="78.75%" />
+<img src="images/cm216-unnamed-chunk-4-1.png" width="78.75%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -195,7 +203,7 @@ p1 <- p + geom_rect(data = df_curr,
 p1
 ```
 
-<img src="images/cm216-unnamed-chunk-8-1.png" width="78.75%" />
+<img src="images/cm216-unnamed-chunk-6-1.png" width="78.75%" />
 
 Edit coordinates to offset one rectangle
 
@@ -213,6 +221,8 @@ kable(df_curr)
 | vocational  |  8.0 | 14.0 |  \-95 | \-85 |
 | specialized | 10.5 | 22.0 | \-100 | \-90 |
 
+Graph
+
 ``` r
 p2 <- p + geom_rect(data = df_curr, 
         mapping = aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax, fill = curriculum), 
@@ -221,7 +231,7 @@ p2 <- p + geom_rect(data = df_curr,
 p2
 ```
 
-<img src="images/cm216-unnamed-chunk-10-1.png" width="78.75%" />
+<img src="images/cm216-unnamed-chunk-8-1.png" width="78.75%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -262,7 +272,7 @@ p3 <- p2 + geom_rect(data = df_devel,
 p3
 ```
 
-<img src="images/cm216-unnamed-chunk-12-1.png" width="78.75%" />
+<img src="images/cm216-unnamed-chunk-10-1.png" width="78.75%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -294,7 +304,7 @@ p3 <- p3 + geom_segment(data = lines2,
 p3
 ```
 
-<img src="images/cm216-unnamed-chunk-14-1.png" width="78.75%" />
+<img src="images/cm216-unnamed-chunk-12-1.png" width="78.75%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -310,7 +320,7 @@ p4 <- p3 +
 p4
 ```
 
-<img src="images/cm216-unnamed-chunk-15-1.png" width="78.75%" />
+<img src="images/cm216-unnamed-chunk-13-1.png" width="78.75%" />
 
 Create data frame with coordinates of scale lines
 
@@ -327,7 +337,7 @@ p4 <- p4 +
 p4
 ```
 
-<img src="images/cm216-unnamed-chunk-16-1.png" width="78.75%" />
+<img src="images/cm216-unnamed-chunk-14-1.png" width="78.75%" />
 
 Create data frame with coordinates of vertical line segments
 
@@ -361,7 +371,7 @@ p4 <- p4 + geom_segment(data = df_vert,
 p4
 ```
 
-<img src="images/cm216-unnamed-chunk-18-1.png" width="78.75%" />
+<img src="images/cm216-unnamed-chunk-16-1.png" width="78.75%" />
 
 Create data frame with coordinates of cross-hairs
 
@@ -383,7 +393,7 @@ kable(df_plus)
 | 18 | 0 |
 | 22 | 0 |
 
-Over-print a white dot and a cross hair
+Over-print a white dot and a cross hair aloing the scatterplot x-axis.
 
 ``` r
 p4 <- p4 + 
@@ -399,9 +409,11 @@ p4 <- p4 +
 p4
 ```
 
-<img src="images/cm216-unnamed-chunk-20-1.png" width="78.75%" />
+<img src="images/cm216-unnamed-chunk-18-1.png" width="78.75%" />
 
-Do the same for the original data symbols
+Do the same for the original data symbols: a gray marker with a larger
+white marker under it creates a gap between the data marker and the
+“helper line.”
 
 ``` r
 # add vocational point to df 
@@ -441,21 +453,29 @@ p5 <- p4 +
 p5
 ```
 
-<img src="images/cm216-unnamed-chunk-22-1.png" width="78.75%" />
+<img src="images/cm216-unnamed-chunk-20-1.png" width="78.75%" />
 
-And so forth. You get the idea.
+And so it goes. The rest of the code is similar. You continue to build
+up layer on layer of primitive graphical elements.
 
 <br> <a href="#top">▲ top of page</a>
 
 ## published display
 
-<img src="../resources/cm216-02.png" width="100%" />
+The compelling story of the graph is the sharp decline of people
+completing post-secondary education. The graph raises several questions
+about the population decline and the specialized curriculum and
+self-authorship developmental models of the post-secondary years. Are
+they correlated? Does another variable underlying both? If so, can it be
+measured?
 
-Critique:
+![](../resources/cm216-02.png)
+
+### graph design
 
 The time scale is conventionally oriented from left to right. With the
 start of kindergarten (K) as year 0, the year axis is drawn to scale,
-providing the common, aligned scale recommended by Cleveland
+providing the common, aligned scale recommended by Cleveland and McGill
 ([1984](#ref-Cleveland+McGill:1984)). This new structure is
 de-emphasized by drawing it in shades of gray. Because the school labels
 “elementary”, “middle”, etc., describe spans of years, the year axis
@@ -495,17 +515,10 @@ lower graph region prominence equal to that of the upper graph region,
 balancing the importance of the two data types (Doumont,
 [2009](#ref-Doumont:2009:Ch.4)). The bars also provide higher contrast
 to the background structure and help a viewer compare the spans and
-overlaps. Following Few’s advice (Few, [2018](#ref-Few:2008)), the bars
-are colored for prominence using a categorical palette that separates
-the categorical data into distinct groups and the level of color
-saturation is moderate for the bar area but higher for the outlines.
-
-The compelling story of the graph is the sharp decline of people
-completing post-secondary education. The graph raises several questions
-about the population decline and the specialized curriculum and
-self-authorship developmental models of the post-secondary years. Are
-they correlated? Does another variable underlying both? If so, can it be
-measured?
+overlaps. Following Few’s advice ([2018](#ref-Few:2008)), the bars are
+colored for prominence using a categorical palette that separates the
+categorical data into distinct groups and the level of color saturation
+is moderate for the bar area but higher for the outlines.
 
 ## references
 

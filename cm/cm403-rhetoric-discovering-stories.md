@@ -1,20 +1,47 @@
 discovering stories
 ================
 
-<img src="../resources/cm403-header.png" width="100%" /> <small> <br>
-<i>Control room</i> by Michael Newman is licensed under
+![](../resources/cm403-header.png)  
+<small> <i>Control room</i> by Michael Newman is licensed under
 <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/legalcode">CC
 BY-NC-ND 2.0</a> <br> </small>
 
 ## contents
 
-[reading](#reading)  
+[introduction](#introduction)  
+[video excerpts](#video-excerpts)  
+[readings](#readings)  
 [reflection on rhetoric](#reflection-on-rhetoric)  
-[video links](#video-links)
+[references](#references)
 
-## reading
+## introduction
 
-Cole Nussbaumer Knaflic
+The principle rhetorical task in creating data graphics is discovering
+and communicating the stories in one’s data. Or as Stephanie Evergreen
+says, “Seriously, what’s your point?”
+
+In today’s work, we consider the opinions of several data journalists
+and data scientists as they describe the process of discovering and
+communicating stories in their data.
+
+The goal of today’s work is to prompt ideas that can be applied to your
+portfolio and rationales that can inform your essays.
+
+## video excerpts
+
+Today’s work on visual rhetoric begins with video excerpts of data
+graphics practitioners discussing their work.  
+I have assembled the video clips in a Moodle file, [Discovering
+stories](https://moodle.rose-hulman.edu/mod/page/view.php?id=1920456)
+![](../resources/icon-moodle-video.png)  
+If you want to watch the full talks, links to the video sources are
+provided at the bottom of the page.
+
+## readings
+
+Cole Nussbaumer Knaflic writes a blog on data visualization. Please read
+the following posts expressing her views on discovering stories in the
+data.
 
 [Multifaceted data and
 story](http://www.storytellingwithdata.com/blog/2014/01/multifaceted-data-and-story)
@@ -38,9 +65,9 @@ or responses to a data visualization challenge
 
 ## reflection on rhetoric
 
-After seeing the video clips (in class) and reading Knaflic’s blog posts
-(outside of class), select any two of our “discovering stories” authors
-to write about in your reflection assignment.
+After seeing the video clips and reading Knaflic’s blog posts, select
+any two of our “discovering stories” authors to write about in your
+reflection assignment.
 
   - Jonathan Corum (whale dive and feed)  
   - Amanda Cox (one image, two interpretations)  
@@ -68,12 +95,18 @@ responses as specific as you can.
 
 <br> <a href="#top">▲ top of page</a>
 
-## video links
+## references
+
+<div id="refs">
+
+</div>
+
+Links to the full talks from which the excerpts were taken.
 
 [Maps of emotion](https://vimeo.com/166948025#t=1m40s) (1:40–9:45) Eric
 Rodenbeck
 
-<img src="../resources/cm403-02.png" width="70%" />
+![](../resources/cm403-02.png)
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -81,7 +114,7 @@ Rodenbeck
 evidence](https://www.youtube.com/watch?v=VrQ8rQoOuhA&t=430s)
 (7:10–11:44) Jonathan Corum
 
-<img src="../resources/cm403-01.png" width="70%" />
+![](../resources/cm403-01.png)
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -89,14 +122,14 @@ evidence](https://www.youtube.com/watch?v=VrQ8rQoOuhA&t=430s)
 visualization](https://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare&t=40s)
 (0:40–5:00) David McCandless
 
-<img src="../resources/cm403-03.png" width="70%" />
+![](../resources/cm403-03.png)
 
 <br> <a href="#top">▲ top of page</a>
 
 <br> [gapminder](https://www.youtube.com/watch?v=hVimVzgtD6w&t=180s)
 (3:00–6:17) Hans Rosling
 
-<img src="../resources/cm402-08.png" width="70%" />
+![](../resources/cm402-08.png)
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -108,16 +141,9 @@ visualization](https://www.ted.com/talks/david_mccandless_the_beauty_of_data_vis
     (04:55–06:34)  
   - [The story depends on what you
     believe](https://vimeo.com/287093172#t=8m52s) (8:52–11:25)
-  - [Complexity, beauty, policiy, and
-    patterns](https://vimeo.com/287093172#t=20m0s) (20:00–22:23)
+    <!-- - [Complexity, beauty, policy, and patterns](https://vimeo.com/287093172#t=20m0s) (20:00--22:23)  -->
 
-<img src="../resources/cm403-04.png" width="70%" />
-
-## references
-
-<div id="refs">
-
-</div>
+![](../resources/cm403-04.png)
 
 ***
 <a href="#top">&#9650; top of page</a>    
