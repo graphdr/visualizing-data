@@ -1,7 +1,8 @@
 R markdown basics
 ================
 
-<img src="../resources/cm305-report-rmd-basics-header.png" width="100%" />
+![](../resources/cm305-report-rmd-basics-header.png)
+
 <small> <br> <i>R Markdown flow</i> by RStudio from the
 <a href="https://rmarkdown.rstudio.com/authoring_quick_tour.html">R
 Markdown quick tour</a>. <br> </small>
@@ -53,16 +54,16 @@ The Rmd script contains three types of content:
     `_italics_`
 3.  Chunks of R code surrounded by backticks ` ``` `
 
-<img src="../resources/cm321_00.png" width="70%" />
+![](../resources/cm321_00.png)
 
 <br>To render the document, click the *Knit* button or use the pulldown
 menu, *Knit \> Knit to HTML*
 
-<img src="../resources/cm321_01.png" width="70%" />
+![](../resources/cm321_01.png)
 
 <br>The report appears in your RStudio viewer.
 
-<img src="../resources/cm321_02.png" width="70%" />
+![](../resources/cm321_02.png)
 
 ## set the Rmd output format
 
@@ -100,7 +101,7 @@ output: github_document
 
 The report appears in your RStudio viewer.
 
-<img src="../resources/cm321_03.png" width="70%" />
+![](../resources/cm321_03.png)
 
 <br>If you take another look at the knit pulldown menu, its options have
 changed.
@@ -121,13 +122,13 @@ produce
 The default Rmd document, for example, illustrates several of these
 markups,
 
-<img src="../resources/cm321_04.png" width="70%" />
+![](../resources/cm321_04.png)
 
 <br> For the complete list of common markups, please read
 
   - [Text formatting with
     Markdown](https://r4ds.had.co.nz/r-markdown.html#text-formatting-with-markdown)
-    (Wickham and Grolemund, [2017](#ref-Wickham+Grolemund:2017))
+    \[@Wickham+Grolemund:2017\]
 
 You may also wish to bookmark the RStudio cheat sheet for future
 reference:
@@ -245,7 +246,7 @@ What the code does:
   - prevents subsequent code chunks from being printed in the output
     document (For a complete listing of chunk options, see [Chunk
     options](https://r4ds.had.co.nz/r-markdown.html#chunk-options)
-    (Wickham and Grolemund, [2017](#ref-Wickham+Grolemund:2017)).)
+    \[@Wickham+Grolemund:2017\].)
 
 By setting the knitr working directory one level up, we match the
 behavior of plain R scripts for which the working directory is always
@@ -257,7 +258,7 @@ without knitting.
 Every time you start a new Rmd script, the initial file should look
 something like this if you prefer name and date outside the header
 
-<img src="../resources/cm321_07.png" width="100%" />
+![](../resources/cm321_07.png)
 
 <br>As always, having added a few lines to the report, knit to check
 that the output is what you expect.
@@ -271,8 +272,7 @@ your report. You might start with a heading, for example,
 ## Introduction   
 ```
 
-followed by prose that gives the reader an overview of the
-    graph,
+followed by prose that gives the reader an overview of the graph,
 
     This display illustrates the distribution of speeds attained by skiers
     in three downhill events in the 2012 Olympic Winter Games disaggregated
@@ -335,19 +335,19 @@ glimpse(starwars)
 
     #> Observations: 87
     #> Variables: 13
-    #> $ name       <chr> "Luke Skywalker", "C-3PO", "R2-D2", "Darth Vader", ...
-    #> $ height     <int> 172, 167, 96, 202, 150, 178, 165, 97, 183, 182, 188...
-    #> $ mass       <dbl> 77.0, 75.0, 32.0, 136.0, 49.0, 120.0, 75.0, 32.0, 8...
-    #> $ hair_color <chr> "blond", NA, NA, "none", "brown", "brown, grey", "b...
-    #> $ skin_color <chr> "fair", "gold", "white, blue", "white", "light", "l...
-    #> $ eye_color  <chr> "blue", "yellow", "red", "yellow", "brown", "blue",...
-    #> $ birth_year <dbl> 19.0, 112.0, 33.0, 41.9, 19.0, 52.0, 47.0, NA, 24.0...
-    #> $ gender     <chr> "male", NA, NA, "male", "female", "male", "female",...
-    #> $ homeworld  <chr> "Tatooine", "Tatooine", "Naboo", "Tatooine", "Alder...
-    #> $ species    <chr> "Human", "Droid", "Droid", "Human", "Human", "Human...
-    #> $ films      <list> [<"Revenge of the Sith", "Return of the Jedi", "Th...
-    #> $ vehicles   <list> [<"Snowspeeder", "Imperial Speeder Bike">, <>, <>,...
-    #> $ starships  <list> [<"X-wing", "Imperial shuttle">, <>, <>, "TIE Adva...
+    #> $ name       <chr> "Luke Skywalker", "C-3PO", "R2-D2", "Darth Vader", "Leia...
+    #> $ height     <int> 172, 167, 96, 202, 150, 178, 165, 97, 183, 182, 188, 180...
+    #> $ mass       <dbl> 77.0, 75.0, 32.0, 136.0, 49.0, 120.0, 75.0, 32.0, 84.0, ...
+    #> $ hair_color <chr> "blond", NA, NA, "none", "brown", "brown, grey", "brown"...
+    #> $ skin_color <chr> "fair", "gold", "white, blue", "white", "light", "light"...
+    #> $ eye_color  <chr> "blue", "yellow", "red", "yellow", "brown", "blue", "blu...
+    #> $ birth_year <dbl> 19.0, 112.0, 33.0, 41.9, 19.0, 52.0, 47.0, NA, 24.0, 57....
+    #> $ gender     <chr> "male", NA, NA, "male", "female", "male", "female", NA, ...
+    #> $ homeworld  <chr> "Tatooine", "Tatooine", "Naboo", "Tatooine", "Alderaan",...
+    #> $ species    <chr> "Human", "Droid", "Droid", "Human", "Human", "Human", "H...
+    #> $ films      <list> [<"Revenge of the Sith", "Return of the Jedi", "The Emp...
+    #> $ vehicles   <list> [<"Snowspeeder", "Imperial Speeder Bike">, <>, <>, <>, ...
+    #> $ starships  <list> [<"X-wing", "Imperial shuttle">, <>, <>, "TIE Advanced ...
 
 Anything you can do in an R script can be written into an Rmd code
 chunk, for example,
@@ -418,8 +418,8 @@ glimpse(df)
 
     #> Observations: 21
     #> Variables: 2
-    #> $ x1 <dbl> 0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5,...
-    #> $ y1 <dbl> 0.00000000, 0.47942554, 0.84147098, 0.99749499, 0.90929743,...
+    #> $ x1 <dbl> 0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0,...
+    #> $ y1 <dbl> 0.00000000, 0.47942554, 0.84147098, 0.99749499, 0.90929743, 0.59...
 
 and graph it,
 
@@ -623,7 +623,7 @@ PNG file. Now add an R code chunk to import the image and Knit.
 
 Your output document should now include the R logo.
 
-<img src="../resources/Rlogo.png" width="10%" />
+![](../resources/Rlogo.png)
 
 ## spell check
 
@@ -633,20 +633,13 @@ your document.
 Alternatively (there’s always more than one way to do things), you can
 use the spellcheck button in the menu.
 
-<img src="../resources/cm305-02.png" width="60%" />
+![](../resources/cm305-02-scaled.png)
 
 <br> Make spelling corrections, save, and knit.
 
 ## references
 
 <div id="refs">
-
-<div id="ref-Wickham+Grolemund:2017">
-
-Wickham H and Grolemund G (2017) *R for Data Science.* O’Reilly Media,
-Inc., Sebastopol, CA <https://r4ds.had.co.nz/>
-
-</div>
 
 </div>
 
